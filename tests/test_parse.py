@@ -46,6 +46,16 @@ class RenderTests(unittest.TestCase):
         self.assertTrue(any("**world**" in p and "*friends*" in p for p in paras))
         self.assertTrue(any("[[eink-image:pic.png]]" in p for p in paras))
 
+    def test_wrapped_lines_fill_one_paragraph(self) -> None:
+        md = "Hello world this is\na wrapped paragraph.\n\nNext one."
+        html = markdown_to_html(md)
+        self.assertIn("<p>Hello world this is a wrapped paragraph.</p>", html)
+        self.assertNotIn("is\na wrapped", html)
+
+    def test_hard_break_stays(self) -> None:
+        html = markdown_to_html("line  \nbreak")
+        self.assertRegex(html, r"line\s*<br\s*/?>\s*break")
+
 
 class LoadBookTests(unittest.TestCase):
     def test_single_file(self) -> None:

@@ -1,17 +1,90 @@
-/* Minimal publisher CSS for KOReader / CREngine.
-   Keep this thin so the reader's own style tweaks win. */
+/* Book CSS for KOReader / CREngine. Keep selectors simple: the engine
+   is not a browser. Soft-wrapped manuscript lines are flattened to
+   spaces in HTML; this file only sets the page texture. */
 
 body {
     margin: 0;
     padding: 0;
+    text-align: justify;
+    line-height: 1.35;
+    widows: 2;
+    orphans: 2;
+}
+
+p {
+    margin: 0;
+    text-indent: 1.2em;
+    text-align: justify;
+    white-space: normal;
+    hyphens: auto;
+}
+
+h1, h2, h3, h4 {
+    text-align: left;
+    text-indent: 0;
+    hyphens: none;
+    page-break-after: avoid;
 }
 
 h1 {
-    page-break-before: always;
+    margin: 0 0 0.8em 0;
+    font-size: 1.35em;
 }
 
-h1:first-child {
-    page-break-before: avoid;
+h2 {
+    margin: 1.15em 0 0.45em 0;
+    font-size: 1.15em;
+}
+
+h3, h4 {
+    margin: 1em 0 0.4em 0;
+    font-size: 1.05em;
+}
+
+h1 + p,
+h2 + p,
+h3 + p,
+h4 + p,
+figure + p,
+pre + p,
+ol + p,
+ul + p,
+blockquote + p {
+    text-indent: 0;
+}
+
+li p {
+    text-indent: 0;
+    margin: 0.2em 0;
+}
+
+li {
+    text-align: left;
+    margin: 0.2em 0;
+}
+
+blockquote {
+    margin: 0.8em 1.2em;
+    text-align: justify;
+}
+
+blockquote p {
+    text-indent: 0;
+}
+
+pre {
+    margin: 0.8em 0;
+    padding: 0;
+    font-size: 0.85em;
+    white-space: pre-wrap;
+    text-align: left;
+    text-indent: 0;
+    hyphens: none;
+}
+
+code {
+    font-family: monospace;
+    font-size: 0.9em;
 }
 
 img {
@@ -22,13 +95,13 @@ img {
 figure.illustration {
     margin: 1.2em 0;
     text-align: center;
+    text-indent: 0;
     page-break-inside: avoid;
 }
 
 figure.illustration img {
     display: block;
     margin: 0 auto;
-    max-height: 90%;
 }
 
 .cover-page {
@@ -42,11 +115,8 @@ figure.illustration img {
     height: auto;
 }
 
-pre, code {
-    font-family: monospace;
-}
-
 hr {
     border: none;
     border-top: 1px solid currentColor;
+    margin: 1.2em 0;
 }

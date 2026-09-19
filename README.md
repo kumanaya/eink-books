@@ -178,8 +178,9 @@ KOReader can open `.md`, but a leading `---` / a horizontal rule can confuse
 CREngine. EPUB with one XHTML file per chapter is the format the engine is
 good at. No JavaScript: KOReader will never run it.
 
-The publisher CSS is deliberately thin (`css/eink.css`) so KOReader's own
-style tweaks win.
+Publisher CSS (`eink.css`) is written for CREngine: justified body,
+first-line indent, and no raw newlines inside `<p>` (manuscript wraps
+become spaces). KOReader can still override it.
 
 ## Details that break scriptlets
 

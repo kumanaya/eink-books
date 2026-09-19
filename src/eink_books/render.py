@@ -6,7 +6,15 @@ from pathlib import Path
 from markdown_it import MarkdownIt
 from markdown_it.token import Token
 
+def _render_softbreak(_tokens, _idx, _options, _env) -> str:
+    # Manuscripts wrap at ~60 cols. CREngine treats a newline inside <p>
+    # as a hard line break, so the page looks ragged. A space lets the
+    # paragraph fill and justify like a typeset EPUB.
+    return " "
+
+
 _MD = MarkdownIt("commonmark", {"html": False}).enable("strikethrough")
+_MD.renderer.rules["softbreak"] = _render_softbreak
 IMAGE_PAGE_RE = re.compile(r"^\[\[eink-image:(.+?)\]\]$")
 
 

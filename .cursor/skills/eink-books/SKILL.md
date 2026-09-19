@@ -29,7 +29,7 @@ is authoring the manuscript itself.
       expand <eink-image> → images/eink-*.jpg (Puter, cached)
       split on ATX H1
       HTML (figures) + FBInk paragraphs
-  → target koreader: EPUB3-ish (cover.xhtml, nav, chapters, eink.css)
+  → target koreader: EPUB3-ish (cover.xhtml, nav, chapters, book CSS)
   → target scriptlet: <slug>.sh + extensions/eink-books/<slug>/{pages,images,cover.jpg,font.ttf}
   → tools/deploy.sh copies .sh/.epub to documents/, internals to extensions/
 ```
