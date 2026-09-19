@@ -1,0 +1,11 @@
+# Build output (also ignored by ../../dev-tools/check.sh)
+out/
+dist/
+*.egg-info/
+__pycache__/
+.pytest_cache/
+.venv/
+venv/
+.env
+*.pyc
+.DS_Store

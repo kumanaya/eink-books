@@ -1,0 +1,52 @@
+/* Minimal publisher CSS for KOReader / CREngine.
+   Keep this thin so the reader's own style tweaks win. */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    page-break-before: always;
+}
+
+h1:first-child {
+    page-break-before: avoid;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+figure.illustration {
+    margin: 1.2em 0;
+    text-align: center;
+    page-break-inside: avoid;
+}
+
+figure.illustration img {
+    display: block;
+    margin: 0 auto;
+    max-height: 90%;
+}
+
+.cover-page {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.cover-page img {
+    width: 100%;
+    height: auto;
+}
+
+pre, code {
+    font-family: monospace;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid currentColor;
+}

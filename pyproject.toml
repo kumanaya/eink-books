@@ -1,0 +1,34 @@
+[project]
+name = "eink-books"
+version = "0.1.0"
+description = "Turn Markdown into KOReader EPUBs or Kindle scriptlet books"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "Daniel Kumanaya" }]
+dependencies = [
+    "ebooklib>=0.18",
+    "markdown-it-py>=3.0",
+    "python-frontmatter>=1.1",
+    "PyYAML>=6.0",
+    "Pillow>=10.0",
+]
+
+[project.optional-dependencies]
+dev = ["setuptools>=68"]
+
+[project.scripts]
+eink-books = "eink_books.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+eink_books = ["css/*.css", "templates/*.tmpl", "data/*"]
+
+[tool.setuptools.package-dir]
+"" = "src"

@@ -1,0 +1,5 @@
+Liberation Serif Regular (LiberationSerif-Regular.ttf) is included
+for pagination on the desk and as a fallback TTF on the Kindle.
+
+Liberation fonts are licensed under the SIL Open Font License, Version 1.1.
+See: https://github.com/liberationfonts/liberation-fonts
