@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="docs/banner.jpg" alt="E-INK BOOKS — Markdown in. A book out." width="720" />
+</p>
+
 <h1 align="center">E-INK BOOKS</h1>
 
 <p align="center">
@@ -10,6 +14,16 @@
   <img src="https://img.shields.io/badge/KOReader-EPUB-6b6b6b?style=flat-square" alt="KOReader" />
   <img src="https://img.shields.io/badge/scriptlet-FBInk-6b6b6b?style=flat-square" alt="scriptlet" />
   <img src="https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square" alt="MIT" />
+</p>
+
+<p align="center">
+  <a href="#on-your-desk">On your desk</a>
+  ·
+  <a href="#on-the-kindle">On the Kindle</a>
+  ·
+  <a href="#why-epub-not-raw-markdown">Why EPUB</a>
+  ·
+  <a href="#license">License</a>
 </p>
 
 A house project of **E-INK HACK**. The converter runs on your desk. The Kindle
