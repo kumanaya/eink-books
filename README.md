@@ -13,7 +13,7 @@
   <img src="https://img.shields.io/badge/Kindle-e--ink-111111?style=flat-square" alt="Kindle" />
   <img src="https://img.shields.io/badge/KOReader-EPUB-6b6b6b?style=flat-square" alt="KOReader" />
   <img src="https://img.shields.io/badge/scriptlet-FBInk-6b6b6b?style=flat-square" alt="scriptlet" />
-  <img src="https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square" alt="MIT" />
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square" alt="MIT" /></a>
 </p>
 
 <p align="center">
@@ -23,11 +23,16 @@
   ·
   <a href="#why-epub-not-raw-markdown">Why EPUB</a>
   ·
-  <a href="#license">License</a>
+  <a href="#community">Community</a>
 </p>
 
-A house project of **E-INK HACK**. The converter runs on your desk. The Kindle
-only receives the artifacts.
+---
+
+The converter runs on your desk. The Kindle only receives the artifacts.
+
+> [!NOTE]
+> A house project of **E-INK HACK**. The workshop is on
+> [Discord](https://discord.gg/KYChSeuyk) — Kindle, Kobo, any e-ink panel.
 
 ```
 eink-books build livro.md --target koreader
@@ -209,7 +214,52 @@ Same traps as the rest of the workshop:
 
 `dev-tools/check.sh` catches the first four before they reach the device.
 
-## License
+---
+
+<h2 align="center">Community</h2>
+
+<p align="center">
+  A house project of <strong>E-INK HACK</strong>.<br />
+  Kindle, Kobo, or anything with a slow, honest screen — bring the hack.
+</p>
+
+<p align="center">
+  <a href="https://discord.gg/KYChSeuyk">
+    <img src="https://invidget.switchblade.xyz/KYChSeuyk" alt="Join the E-INK HACK Discord" />
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://discord.gg/KYChSeuyk"><img src="https://dcbadge.limes.pink/api/server/KYChSeuyk" alt="E-INK HACK on Discord" /></a>
+</p>
+
+<table align="center">
+  <tr>
+    <td align="center" width="220">
+      <a href="https://discord.gg/KYChSeuyk">
+        <img src="https://img.shields.io/badge/Discord-join%20the%20workshop-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /><br />
+        <sub>Where the hacks land</sub>
+      </a>
+    </td>
+    <td align="center" width="220">
+      <a href="https://github.com/kumanaya/eink-books">
+        <img src="https://img.shields.io/badge/GitHub-eink--books-181717?style=for-the-badge&logo=github" alt="GitHub" /><br />
+        <sub>The converter</sub>
+      </a>
+    </td>
+    <td align="center" width="220">
+      <a href="https://x.com/danielkumanaya">
+        <img src="https://img.shields.io/badge/X-danielkumanaya-000000?style=for-the-badge&logo=x&logoColor=white" alt="X" /><br />
+        <sub>What we are shipping</sub>
+      </a>
+    </td>
+  </tr>
+</table>
+
+> [!TIP]
+> Start in the [Discord](https://discord.gg/KYChSeuyk). Drop a photo of the panel, a KOReader plugin, a scriptlet, a dead end. That is the whole point.
+
+---
 
 MIT. See [LICENSE](LICENSE). Liberation Serif (the bundled TTF) is SIL OFL;
 see [src/eink_books/data/FONT-LICENSE.txt](src/eink_books/data/FONT-LICENSE.txt).
